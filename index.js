@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { conectDB } from "./config/bd.js";
-import recetaRoutes from "./routes/receta.routes.js";
+import OrkoRoutes from "./routes/OrkosRoutes.js";
 
 // Configuración de variables de entorno
 dotenv.config();
@@ -20,11 +20,11 @@ conectDB();
 
 // Ruta raíz para la API (agregada para evitar 'Cannot GET /')
 app.get("/", (req, res) => {
-  res.send("Bienvenido a la API de recetas. Usa /recetas para acceder a las recetas.");
+  res.send("Bienvenido a la API de Orkos. Usa /orko para acceder a los Orkos.");
 });
 
 // Configuración de rutas
-app.use("/", recetaRoutes);
+app.use("/", OrkoRoutes);
 
 // Solo iniciar el servidor si está en entorno local
 if (process.env.NODE_ENV !== "production") {

@@ -1,4 +1,3 @@
-// Importación de mongoose para el modelado de datos
 import mongoose from "mongoose";
 
 // Definición del esquema de la receta

@@ -8,7 +8,7 @@ import {
   patchOrko,
   inactivarOrko,
   deleteOrko,
-} from "../controllers/OrkosController";
+} from "../controllers/OrkosController.js";
 
 const router = express.Router();
 

@@ -1,4 +1,4 @@
-import Orko from '../models/OrkosModel';
+import Orko from '../models/Orkos.model.js';
 
 const getOrko = async (req, res) => {
   try {
