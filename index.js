@@ -28,7 +28,7 @@ app.use("/", OrkoRoutes);
 
 // Solo iniciar el servidor si está en entorno local
 if (process.env.NODE_ENV !== "production") {
-  const PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT || 10000;
   app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
   });
